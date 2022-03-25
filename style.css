@@ -1,0 +1,260 @@
+
+@charset "UTF-8";
+
+body{
+
+
+/*   padding: 36px;*/
+   padding: 2%;
+   margin : 0px;
+   counter-reset: footnote-counter;
+
+  /*background-color: #eaf2df;*/
+  /*background-color: black;*/
+
+
+  
+
+  /*font-family: 'DM Sans', sans-serif;*/
+  /*color: #6666ff;*/
+  /*color: white;*/
+     /*font-family: 'CirrusCumulus';
+     src: url(2.fonts/CirrusCumulus.woff);
+     /*src: url('/2.font/Helvetica-Textbook-LT-Roman');*/
+  
+}
+
+p { margin: 0;
+    
+    
+
+  }
+
+
+/*글자 밑줄 친것*/
+.underline {
+   box-shadow: inset 0 -2.5px 0 black; 
+   /*margin-left: 100px;*/
+/*위치*/
+  /* line-height: 11px;*/
+
+}
+
+.maintext{
+  font-family: 'Times New Roman' ;
+  font-size: 45px;
+  transform: scaleX(0.98);
+  word-spacing: -10%;
+ /* text-indent: 100px;*/
+/*  position: absolute;*/
+  line-height: 51px;
+  width: 50%;
+  /*max-width: 50vw;*/
+  /*z-index: 1;*/
+  top: 0vw;
+}
+
+/*.footnotenumber{
+  vertical-align: super;
+  font-size: 17pt;
+  color: blue;
+  원래본문 행간51px인데 윗첨자 때문에 줄 위로 행간 넓어지는것 방지하기 위해 작게 설정
+  line-height: 10px;
+    
+}*/
+
+
+/*.indent{
+  text-indent: -100px;
+  margin-left: 0.8em;*/
+
+.footnote{
+
+  /*font-family: 'helvetica';
+  font-size: 15pt;
+  transform: scaleX(0.98);
+  line-height: 26px;
+  word-spacing: -10%;
+  max-width: 25vw;
+  margin-left: 50vw;
+  z-index: 2;*/
+ 
+    float: right;
+    clear: right;
+    margin-right: -52%;
+    width: 50%;
+    font-family: 'helvetica';
+    font-size: 15pt;
+    /*margin-top: 0.3rem;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    line-height: 1.3;*/
+    line-height: 26px;
+    word-spacing: -10%;
+    transform: scaleX(0.98);
+    vertical-align: baseline;
+    position: relative;
+}
+
+.footnote-number {
+    counter-increment: footnote-counter;
+}
+
+.footnote-number:after,
+.footnote:before {
+    font-family: helvetica;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.footnote-number:after {
+    content: counter(footnote-counter);
+    font-size: 15px;
+    top: -0.5rem;
+    /*left: 0.1rem;*/
+}
+
+.footnote:before {
+    content: counter(footnote-counter) " ";
+    font-size: 1rem;
+    /*top: -0.5rem;*/
+}
+
+
+
+input.margin-toggle {
+    display: none;
+}
+
+label.footnote-number {
+    display: inline-block;
+    max-height: 51px; /* should be less than or equal to paragraph line-height */
+}
+
+label.margin-toggle:not(.footnote-number) {
+    display: none;
+}
+
+
+
+
+.images{
+  max-width: 50vw;
+  margin-left: 50vw;
+  z-index: 3;
+
+}
+
+
+
+@media (max-width: 760px) {
+    body {
+        width: 84%;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .maintext{
+  font-family: 'Times New Roman' ;
+  font-size: 30px;
+  transform: scaleX(0.98);
+  word-spacing: -10%;
+ /* text-indent: 100px;*/
+/*  position: absolute;*/
+  line-height: 41px;
+  width: 100%;
+  /*max-width: 50vw;*/
+  /*z-index: 1;*/
+  top: 0vw;
+}
+
+
+    hr,
+    section > p,
+    section > footer,
+    section > table {
+        width: 100%;
+    }
+
+    pre > code {
+        width: 97%;
+    }
+
+    section > dl,
+    section > ol,
+    section > ul {
+        width: 90%;
+    }
+
+    figure {
+        max-width: 90%;
+    }
+
+    figcaption,
+    figure.fullwidth figcaption {
+        margin-right: 0%;
+        max-width: none;
+    }
+
+    blockquote {
+        margin-left: 1.5em;
+        margin-right: 0em;
+    }
+
+    blockquote p,
+    blockquote footer {
+        width: 100%;
+    }
+
+    label.margin-toggle:not(.sidenote-number) {
+        display: inline;
+    }
+
+    .sidenote,
+    .marginnote {
+        display: none;
+    }
+
+    .margin-toggle:checked + .sidenote,
+    .margin-toggle:checked + .marginnote {
+        display: block;
+        float: left;
+        left: 1rem;
+        clear: both;
+        width: 95%;
+        margin: 1rem 2.5%;
+        vertical-align: baseline;
+        position: relative;
+    }
+
+    label {
+        cursor: pointer;
+    }
+
+    div.table-wrapper,
+    table {
+        width: 85%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
