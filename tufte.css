@@ -29,7 +29,7 @@
 }
 
 
-@font-face {
+/*@font-face {
     font-family: "et-book";
     src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
     src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
@@ -37,44 +37,10 @@
     font-style: normal;
     font-display: swap;
 }
+*/
 
 
 
-@font-face {
-    font-family: "et-book";
-    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-    src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "et-book";
-    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-    src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "et-book";
-    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-    src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: "et-book-roman-old-style";
-    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-    src: url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
 /* Tufte CSS styles */
 html {
@@ -104,12 +70,34 @@ body {
     }
 }
 
+
+.sticky{
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+/*  background-color: yellow;
+  padding: 50px;
+  font-size: 120px;*/
+}
+
+
+
 h1 {
-    font-weight: 400;
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
-    font-size: 3.2rem;
-    line-height: 1;
+    font-family: signalcompressed;
+    
+    /*margin-top: 4rem;*/
+   
+    margin-top: 0.1rem; 
+    margin-bottom: 40rem;
+    font-size: 34rem;
+    line-height: 30rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    
+
+
 }
 
 h2 {
@@ -193,22 +181,22 @@ p {
 }
 
 ul {
-
+  font-family: signalcompressed;
   list-style-type: none;
   margin-left: 57%;
-  font-size: 1rem;
+  font-size: 4rem;
   padding: 0;
   overflow: hidden;
-    /*background-color: #eaf2df;
-  opacity: 50%;*/
-  position: fixed;
-  z-index: 10;
+
+
+  /*position: fixed;*/
+  /*z-index: 10;*/
   display: table;
   width: 45%;
   border-collapse: collapse;
-  table-layout: fixed;
+  /*table-layout: fixed;*/
   text-align: center;
-  /*border-bottom: 2.2px solid white;*/
+  
   
 }
 
@@ -217,7 +205,6 @@ li {
 
   overflow: hidden;
   display: table-cell;
-  
   padding: 0px;
   /*text-overflow: ellipsis;*/
 
@@ -452,7 +439,7 @@ code, pre > code {
     font-size: 1.2rem;
 }
 
-h1 > code,
+/*h1 > code,*/
 h2 > code,
 h3 > code {
     font-size: 0.80em;
@@ -521,6 +508,43 @@ label.margin-toggle:not(.sidenote-number) {
         padding-left: 2.5%;
         padding-right: 2.5%;
         
+    }
+
+    ul {
+  font-family: signalcompressed;
+  list-style-type: none;
+  /*margin-left: 57%;*/
+  margin: auto;
+  font-size: 4rem;
+  padding: 0;
+  overflow: hidden;
+
+
+
+  /*position: fixed;*/
+  /*z-index: 10;*/
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  /*table-layout: fixed;*/
+  text-align: center;
+  
+  
+}
+
+    h1{
+    font-family: signalcompressed;
+    
+    /*margin-top: 4rem;*/
+   
+    margin-top: 0.1rem; 
+    margin-bottom: 30rem;
+    font-size: 20rem;
+    line-height: 18rem;
+    margin-right: auto
+    margin-left: auto;
+    text-align: center;
+
     }
 
     hr,
