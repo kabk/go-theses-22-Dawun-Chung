@@ -551,8 +551,9 @@ label.margin-toggle:not(.sidenote-number) {
     }
 
     blockquote {
-        margin-left: 1.5em;
-        margin-right: 0em;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     blockquote p,
