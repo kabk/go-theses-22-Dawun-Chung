@@ -104,15 +104,13 @@ div.sticky{
 
 h1 {
     font-family: signalcompressed;
-    
+    font-weight: normal;
     /*margin-top: 4rem;*/
    
     margin-top: 0.1rem; 
     margin-bottom: 40rem;
-    /*font-size: 40rem;*/
-    font-size: 40vw;
-    line-height: 30vw;
-   /* line-height: 30rem;*/
+    font-size: 40rem;
+    line-height: 30rem;
     /*margin-right: auto;
     margin-left: auto;*/
     text-align: center;
@@ -123,8 +121,7 @@ h1 {
 
 h2 {
     font-family: signalcompressed;
-    /*font-style: italic;
-    margin-top: 1rem;
+    font-weight: normal;
     margin-bottom: 1rem;*/
     margin-top: 4rem;
     margin-bottom: 2rem;
@@ -202,16 +199,15 @@ p {
 ul {
   font-family: signalcompressed;
   list-style-type: none;
-  margin-left: 95%;
+  margin-left: 57%;
   margin-bottom: -4.5rem;
   font-size: 3.5rem;
   padding: 0;
   overflow: hidden;
- /* display: table;*/
+  display: table;
   width: 45%;
   border-collapse: collapse;
-  text-align: left;
-  color: #c0c0c0;
+  text-align: center;
   
 }
 
@@ -219,7 +215,7 @@ li {
   
 
   overflow: hidden;
-  /*display: table-cell;*/
+  display: table-cell;
   padding: 0px;
   margin: 0px;
   /*text-overflow: ellipsis;*/
@@ -350,17 +346,19 @@ a:link, .tufte-underline, .hover-tufte-underline:hover {
 }
 
 /* Adds dark mode */
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     a:link, .tufte-underline, .hover-tufte-underline:hover {
-  /*      text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;*/
+        text-shadow: 0.03em 0 #151515, -0.03em 0 #151515, 0 0.03em #151515, 0 -0.03em #151515, 0.06em 0 #151515, -0.06em 0 #151515, 0.09em 0 #151515, -0.09em 0 #151515, 0.12em 0 #151515, -0.12em 0 #151515, 0.15em 0 #151515, -0.15em 0 #151515;
     }
 }
 
 a:link::selection,
 a:link::-moz-selection {
-   /* text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;*/
+   /* text-shadow: 0.03em 0 #b4d5fe, -0.03em 0 #b4d5fe, 0 0.03em #b4d5fe, 0 -0.03em #b4d5fe, 0.06em 0 #b4d5fe, -0.06em 0 #b4d5fe, 0.09em 0 #b4d5fe, -0.09em 0 #b4d5fe, 0.12em 0 #b4d5fe, -0.12em 0 #b4d5fe, 0.15em 0 #b4d5fe, -0.15em 0 #b4d5fe;
     background: #b4d5fe;
 }
+*/
+
 
 /* Sidenotes, margin notes, figures, captions */
 img {
@@ -439,7 +437,7 @@ div.table-wrapper {
     font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
 }
 
-.sans {
+/*.sans {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     letter-spacing: .03em;
 }
@@ -448,12 +446,12 @@ code, pre > code {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-size: 1.0rem;
     line-height: 1.42;
-    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
+    -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 
 }
 
 .sans > code {
     font-size: 1.2rem;
-}
+}*/
 
 /*h1 > code,*/
 h2 > code,
@@ -562,7 +560,8 @@ li {
 
     h1{
     font-family: signalcompressed;
-    
+    font-weight: normal;
+
     /*margin-top: 4rem;*/
    
     margin-top: 0.1rem; 
@@ -579,6 +578,7 @@ li {
 
     h2 {
     font-family: signalcompressed;
+    font-weight: normal;
     margin-top: 4rem;
     margin-bottom: 2rem;
     font-size: 17rem;
