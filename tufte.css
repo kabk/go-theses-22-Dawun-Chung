@@ -98,6 +98,7 @@ div.sticky{
 /*  background-color: yellow;
   padding: 50px;
   font-size: 120px;*/
+  z-index: 10;
 }
 
 
