@@ -516,7 +516,7 @@ label.margin-toggle:not(.sidenote-number) {
 
 /*스크린사이즈 줄어들었을 경우*/
 
-@media (max-width: 760px) {
+@media (max-width: 750px) {
     body {
         width: 95%;
         padding-left: 2.5%;
