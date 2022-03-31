@@ -28,6 +28,20 @@
     font-display: swap;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap');
+
+/*@font-face {
+  font-family: "NotoSerifKR";
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap") format("woff");
+  unicode-range: U+0020-007E;
+  font-style: normal;
+}*/
+
+font-family: sandoll-jebi2, sans-serif;
+font-weight: 500;
+font-style: normal;
+
+
 
 /*@font-face {
     font-family: "et-book";
@@ -53,7 +67,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     /*padding-left: 1%;*/
-    font-family: Times New Roman, Helvetica, signalcompressed, et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: Times New Roman, Helvetica, signalcompressed, 'Noto Serif KR', et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
    /* background-color: #fffff8;
     color: #111;*/
     /*max-width: 1920px;*/
@@ -70,12 +84,17 @@ body {
     }
 }
 
+.kr{
+    font-family: Noto Serif KR;
 
-.sticky{
+}
+
+div.sticky{
 
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  margin-bottom: 0; 
 /*  background-color: yellow;
   padding: 50px;
   font-size: 120px;*/
@@ -90,10 +109,12 @@ h1 {
    
     margin-top: 0.1rem; 
     margin-bottom: 40rem;
-    font-size: 34rem;
-    line-height: 30rem;
-    margin-right: auto;
-    margin-left: auto;
+    /*font-size: 40rem;*/
+    font-size: 40vw;
+    line-height: 30vw;
+   /* line-height: 30rem;*/
+    /*margin-right: auto;
+    margin-left: auto;*/
     text-align: center;
     
 
@@ -101,22 +122,20 @@ h1 {
 }
 
 h2 {
-    font-style: italic;
-    font-weight: 400;
-    margin-top: 2.1rem;
-    margin-bottom: 1.4rem;
-    font-size: 2.2rem;
-    line-height: 1;
+    font-family: signalcompressed;
+    /*font-style: italic;
+    margin-top: 1rem;
+    margin-bottom: 1rem;*/
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    /*margin-left: 6rem; */
+    font-size: 20rem;
+    display: block;
+    line-height: 18rem;
+    word-spacing: 0;
 }
 
-h3 {
-    font-style: italic;
-    font-weight: 400;
-    font-size: 1.7rem;
-    margin-top: 2rem;
-    margin-bottom: 1.4rem;
-    line-height: 1;
-}
+
 
 hr {
     display: block;
@@ -130,16 +149,15 @@ hr {
 
 p.subtitle {
     font-family: signalcompressed;
-    /*font-style: italic;
-    margin-top: 1rem;
-    margin-bottom: 1rem;*/
+    color: #c0c0c0; 
     margin-top: 4rem;
     margin-bottom: 1.2rem;
-    margin-left: 6rem; 
-    font-size: 12rem;
+    margin-left: 3rem; 
+    font-size: 10rem;
     display: block;
-    line-height: 10rem;
-
+    line-height: 7.5rem;
+    word-spacing: 0;
+    width: 50%
 }
 
 .numeral {
@@ -156,6 +174,7 @@ article {
 
 section {
 
+padding: 0rem;
     /*padding-top: 1rem;
     padding-bottom: 1rem;*/
 }
@@ -173,7 +192,7 @@ ol{
 p {
     
    
-    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
     /*margin-bottom: 1.4rem;
     padding-right: 0;*/
     vertical-align: baseline;
@@ -183,20 +202,16 @@ p {
 ul {
   font-family: signalcompressed;
   list-style-type: none;
-  margin-left: 57%;
-  font-size: 4rem;
+  margin-left: 95%;
+  margin-bottom: -4.5rem;
+  font-size: 3.5rem;
   padding: 0;
   overflow: hidden;
-
-
-  /*position: fixed;*/
-  /*z-index: 10;*/
-  display: table;
+ /* display: table;*/
   width: 45%;
   border-collapse: collapse;
-  /*table-layout: fixed;*/
-  text-align: center;
-  
+  text-align: left;
+  color: #c0c0c0;
   
 }
 
@@ -204,8 +219,9 @@ li {
   
 
   overflow: hidden;
-  display: table-cell;
+  /*display: table-cell;*/
   padding: 0px;
+  margin: 0px;
   /*text-overflow: ellipsis;*/
 
   /*border-bottom: 4px solid #6666ff;*/
@@ -510,27 +526,39 @@ label.margin-toggle:not(.sidenote-number) {
         
     }
 
-    ul {
+
+
+
+ul {
   font-family: signalcompressed;
   list-style-type: none;
   /*margin-left: 57%;*/
-  margin: auto;
-  font-size: 4rem;
+  margin-right: auto;
+  margin-left: auto;
+  /*margin-bottom: -4.5rem;*/
+  font-size: 3.5rem;
   padding: 0;
   overflow: hidden;
-
-
-
-  /*position: fixed;*/
-  /*z-index: 10;*/
   display: table;
   width: 100%;
+/*  width: 45%;*/
   border-collapse: collapse;
-  /*table-layout: fixed;*/
   text-align: center;
   
   
 }
+
+
+li {
+  
+
+  overflow: hidden;
+  display: table-cell;
+  padding: 0px;
+  margin: 0px;
+}
+
+
 
     h1{
     font-family: signalcompressed;
@@ -547,6 +575,20 @@ label.margin-toggle:not(.sidenote-number) {
     text-align: center;
 
     }
+
+
+    h2 {
+    font-family: signalcompressed;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-size: 17rem;
+    line-height: 16rem;
+    display: block;
+    text-align: center;
+    word-spacing: 0;
+
+    }   
+
 
     hr,
     section > p,
